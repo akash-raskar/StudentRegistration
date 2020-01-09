@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="40dp"
+    tools:context=".Registration">
+
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="30sp"
+        android:text="Employee Details"
+        android:textAlignment="center"
+        android:textColor="#BD141414"
+        android:textStyle="bold"
+        android:textSize="30dp" />
+
+
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:columnCount="2"
+        android:rowCount="5">
+
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Employee ID :"
+            android:textColor="#B60B0B0B"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edt1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="Enter Employee ID" />
+
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#B60B0B0B"
+            android:textStyle="bold"
+            android:text="Employee Name :" />
+
+        <EditText
+            android:id="@+id/edt2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="Enter Name" />
+        <TextView
+            android:id="@+id/tv4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#B60B0B0B"
+            android:textStyle="bold"
+            android:text="Gender :" />
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/radioButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:checked="false"
+                android:text="Male"
+                android:textColor="#D2070707"
+                android:textSize="25dp" />
+
+            <RadioButton
+                android:id="@+id/radioButton2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:checked="false"
+                android:text="Female"
+                android:textColor="#D2070707"
+                android:textSize="25dp" />
+
+            <RadioButton
+                android:id="@+id/radioButton3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:checked="false"
+                android:text="Other"
+                android:textColor="#D2070707"
+                android:textSize="25dp" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/tv3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#B60B0B0B"
+            android:textStyle="bold"
+            android:text="Employee Department :" />
+
+        <EditText
+            android:id="@+id/edt3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="Enter Department" />
+
+    </GridLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            >
+
+            <Button
+                android:id="@+id/BtnAdd"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:text="Add"
+                android:layout_column="1"/>
+
+            <Button
+                android:id="@+id/BtnDelete"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:text="Delete"
+                android:layout_column="2"/>
+
+            <Button
+                android:id="@+id/BtnModify"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:text="Modify"
+                android:layout_column="3"/>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/BtnView"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:text="View"
+                android:layout_column="1"/>
+
+            <Button
+                android:id="@+id/BtnViewAll"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:text="View All"
+                android:layout_column="2"/>
+
+        </TableRow>
+
+
+    </TableLayout>
+
+</LinearLayout>
